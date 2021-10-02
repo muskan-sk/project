@@ -1,0 +1,485 @@
+1. INTRODUCTION
+1.1 Overview
+Now-a-days Remote Lab and are equipped with various electronic machines and equipment. Most are always controlled manually using either hand held remote control device or manually switching them ON or OFF. However, this may not be possible all the time as the operator may not be at home. In some instance, it is possible to have forgotten to either switch the Lab Practical’s OFF or ON and this means the operator needs to travel down to where the Practical appliances are in order to control them. Hence, there is a growing desire to have a device or mechanism which allows users to remotely monitor and control these electronic Practical appliances without distance being a barrier. This work presents an innovative way to solving the problem discussed above by designing and implementing a GSM based electronic appliances control and monitoring system which uses the concept of SMS made available by hand held mobile devices. The uniqueness of this approach is that the Remote Based GSM module is incorporated into the switching unit which gives a single compact unit.
+
+1.2 Necessity
+The web technology has begun to have a rapid development in the field of embedded systems in the post-PC era. The application of embedded web technology in the remote monitoring system has given rise to the technological change in the field of industrial control. Nowadays the management of the domestic laboratories in the research institute and universities has issues of poor real time, high cost and low precision .It is difficult to determine the quality of the environment of the laboratory. So the Laboratory Intelligent Monitoring System should be developed to implement early warning, remote control, real-time monitoring and other functions. 
+
+1.3 Objective
+This project comes up with a design solution of an embedded web-based remote monitoring system for the environment in the laboratories, which realizes the local management and remote publishing applications for large-scale dynamic data of sensor networks.
+
+
+
+1.4 Theme
+Describe a software and hardware design solution of an embedded web-based remote monitoring system for the environment in the laboratories. Build an embedded web server to publish the data of sensor networks to achieve remote monitoring which is based on B / S architecture. Managers can control the equipments in the lab through a web browser which is cross-platform. The embedded database manages the data collected by sensor networks, realizing the local management of environmental data. The experimental results show that the system designed implements safe and convenient remote monitoring and local management of the environment in laboratories and has high availability, reliability and popularization.
+
+1.5 Organization
+This Work consists of five chapters. The following is the outline of this seminar.
+Chapter 1 contains Introduction, necessity, objective, theme and organization of thesis.
+Chapter 2 will discuss about research and information about the project. Every facts and information that found through journals or other references will be mentioned in this chapter. 
+Chapter 3 represent about themethodology used. All methodology will be described details in this chapter.
+Chapter 4 includes the performance analysis and software simulation.
+Chapter 5 includes result and execution outputs.
+Chapter 6 is the last chapter. This chapter will mention conclusion& future scope.
+
+
+
+
+
+
+
+
+2. LITERATURE SIRVEY
+
+2.1.	Overview and Purpose of Literature Survey
+During the present day’s technology is all about the automation and wireless control of all the   equipment used in industries, factories and households. Any equipment that can be controlled wirelessly is more easily maintained and it responds very fast comparing to the manual operation of the equipment. It increases safety as well as speed of operation in times of failure or damage. So here we present a design which uses wireless technology for switching of electrical appliances. This project uses the application of wireless communication i.e. GSM network for the wireless control of the electrical appliances.. Some of them are as follows.
+1.	“GSM-Bluetooth based Remote Monitoring and Control System with Automatic Light Controller” International Journal of Computer Applications (0975 – 8887) 
+Summary: This paper gives a review of these systems based on existing technologies and also proposes a GSM-Bluetooth based light controller and remote monitoring system. This system has simple features designed with the objective of minimum power consumption using infrared sensor for controlling lights, fans and other appliances which are controlled via SMS using a GSM module. A Bluetooth module is also interfaced with the main microcontroller chip. 
+2.	“Data Acquisition and Control Using Microcontroller” International Journal of Scientific & Engineering Research, Volume 6, Issue 4 
+Summary: This paper discusses the way to employ the microcontroller device for data acquisition and control operations in electricity transportation process. A Supervisory Control and Data Acquisition (SCADA) system is always used with Programmable Logic Control (PLC) to control electric power stations. In this paper, a microcontroller is used with SCADA system instead of PLC to control the whole electric network. Design of the implemented modules is introduced. It consists of three units: a collecting data/transmitter unit, a receiving unit and storage/dispatch unit. The reason for using wireless communication instead of Ethernet connection is increasing the data rate and making the cost of cables for network is lying down. 
+3.	“Microcontroller Based Data Acquisition And Supervision” International Journal Of Scientific & Technology Research Volume 4, Issue 05 
+Summary: In this research paper we have designed a system that acts as a temperature sensor and also a warning system the system also has the facilitation of shutting down the machinery whose temperature is to be monitored. The main function of the system is to constantly monitor the temperature of a machine, compare it to a predefined limit and shut down the machine if the temperature exceeds or falls below that limit. 
+4.	“AVR Microcontroller Based Data Acquisition System for Laboratory Experiments ” Pelagia Research Library 
+Summary: Data acquisition and control system based on AVR microcontroller (Atmega16), for laboratory experiments is presented. This makes use of the built in ADC of the microcontroller and thus the resolution is 10 bits i.e. one part in 1024. In a typical setup the measuring system, under program control keeps on monitoring the voltage or current analogue inputs and makes the digital equivalent available on the selected ports. The controlling program on a PC read this input at pre-decided time intervals. The controlling program reads these values and process accordingly. Microcontroller programs are also developed and tested successfully. The data acquisition system was successfully used to monitor voltage and current during the experiment of growth of fractals. 
+5.	“Remote Data Acquisition of Physical Parameters Using Master-Slave Utility of Microcontroller” International Journal of Engineering Research and General Science Volume 2, Issue 5, 
+Summary: Improve the performance of remotely situated device control and data monitoring, acquisition with parameter such as temperature, pressure, vibration, humidity on real time basis give the data modularity as well as low data processing time. The infrastructure of the existing RF network is used, which is based on supervisory control, monitoring and data acquisition demands constant development and applicability in research. Versatile and highly accurate data acquisition system is investigated. 
+
+
+2.2 Literature Review
+Many researchers have worked in the field of home appliances automation with many contributing in a useful way. Some of their contributions are discussed in this section. Presented a system for smart-home control of appliances based on timer and speech interaction. The paper presented two major approaches to control home appliances; the first involves controlling home appliances using timer option whereby the expected time within which the electronic appliances will work would have been set. The second approach is to control home appliances using voice command. Designed and implemented an infrared (IR) remote control signal decoder which can be used for various home control applications. The approach introduced improved on the distance within which the electronic appliances can be controlled. A Telephone Based Wireless Remote Controller for Home Appliances was designed by. The system developed used a telephone as the remote controller; the telephone generates a Dual Tone Multi frequency (DTMF) signal corresponding to each dialed digit which is converted to a BCD code by the Telephone interface circuit. This is given as input to the transmitter module which is then used to control various home appliances through a receiver module. Data processing stages of the transmitter and receiver modules was implemented using digital components, thereby avoiding possible use of conventional devices like monostable multivibrators. Developed a GSM based household power management system which allows users to control connected electronic appliances remotely. In their work, a Nokia6100 phone was interfaced with a microcontroller and an SMS received by the Nokia phone will be interpreted by the microcontroller which in turns carried out the specified instruction contained in the SMS sent by the users. Developed a Cell Phone based Remote Control System for Controlling Home and Office Appliances, the end user has to connect his/her cell phone to the system via headset. 
+To activate the cellular phone unit on the system a call is to be made and as the call is answered, in response the user would enter a two/three digit password to access the system to control devices. As the caller press the specific password, it results in turning ON or OFF specific device. Studied various remote controlled home automation systems with different network technologies and submitted that the best home automation systems must be flexible and must be controllable from any distance and they submitted that an IP based remote control system is preferable. 
+Designed and implemented a smart house control system using LABVIEW, the smart house has two interfaces, computer interfacing, and remote control unit interfacing. Computer device that provided with Lab VIEW software is the main controller unit for all systems in the house. It receives data from house sensors, process information and updates data for the difference systems, and transmit controlling signal to house systems and switching output devices. developed an ATMEL AT89S52 microcontroller Based Home Automation System With Security, the developed system includes features like Password Based Locking System, Counter dependent automatic switching system, Temperature controlled cooling system, Light saving system and Fire and Smoke sensor. This paper introduces a GSM based electronic appliances monitoring and controlling system which uses SMS. SMS based system because of the following facts: (i)SMS is supported by 100% GSM mobile phones and at least 60% of people in developing countries can afford the cheapest mobile phone which can be used to send SMS and this makes SMS the most accessible medium of communication. (ii)Almost all subscription plans provided by wireless carriers include inexpensive SMS messaging service which makes SMS more affordable by all mobile phone users. (iii)SMS are easier to send from any one phone to the other infact SMS can be sent to an offline mobile phone which will be received immediately the mobile phone is ON.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3. SYSTEM DESCRIPTION
+
+3.1.	System Block Diagram
+
+ 
+Fig. 3.1 (a) Block Diagram of Lab kit automation
+This IOT based lab surveillance and control system is exclusively used to keep surveillance on the electrical devices working condition and also to control the on/off functionality from a central remote location. The designed system works efficiently for lab automation. On the one hand it improves efficiency of the system by sending alert signal in case of any defect and on the other hand it drastically reduces the electric energy consumption by providing central control over the appliances. The graphical App based mobile controlling gives a user friendly and easily accessible platform to the user. This system can be installed as energy efficient system to control lab automation that requires a lot of energy and needs manual intervene. 
+
+
+
+
+
+3.2	 Explanation of each block
+3.2.1 Atmega 328P Microcontroller
+
+ 
+
+Fig. 3.2.1 (a).ATmega 328 P microcontroller pin Out
+
+The arduino Uno is a microcontroller board based on the ATmega328. It has a USB connection, a power jack, an ICSP header, and a reset button. The Uno differ from all preceding boards it does not use the FTDI USB to serial driver chip.”UNO” means one in Italian and is named to mark the upcoming release of arduino 1.0. The Uno is the latest in a series of USB Arduino boards and reference model for Arduino platform. The Arduino Uno can power via the USB connection or with external power supply. External power can come either from an AC to DC adapter or battery. If supply is less than 7v the 5v pin may supply less than five volts and the board may be unstable. The Arduino software includes a serial monitor which allows simple textual data to be send to and from the Arduino board, The RX and TX LEDs on the board will flash when data is being transmitted via the USB to serial chip and USB connection to the computer. A Software Serial library allows for serial communication on any of the UNO’s digital pins, the arduino software includes a wire library to simplify use of the I2C bus. Arduino is open source hardware and software, which are license under the GNU lesser General public license, which is permitting the manufacture of Arduino board and software distribution by anyone. 
+
+
+
+Specification:
+•	32K Bytes of In-System Self-Programmable Flash program memory
+•	1K Bytes EEPROM
+•	2K Bytes Internal SRAM 
+•	Digital:14 pins
+•	Analog: 6 pins
+•	Crystal oscillator: 16MHZ
+•	Operating voltage: 1.8 - 5.5V
+•	External supply: 6 to 20 V
+•	Temperature range: -40°C to 85°C
+3.2.2	GSM-Module
+SIM900A Modem is built with Dual Band GSM based SIM900A modem from SIMCOM. It works on frequencies 900MHz. SIM900A can search these two bands automatically. The frequency bands can also be set by AT Commands. The baud rate is configurable from 1200-115200 through AT command. SIM900A is an ultra compact and wireless module. The Modem is coming interface, which allows you connect PC as well as microcontroller with RS232 Chip (MAX232). It is suitable for SMS, Voice as well as DATA transfer application in M2M interface. The onboard Regulated Power supply allows you to connect wide range unregulated power supply. Using this modem, you can make audio calls, SMS, Read SMS; attend the incoming calls and ect. Through simple AT commands. This is a complete GSM module in a SMT type and made with a very powerful single-chip, allowing you to benefit from small dimensions. SIM 900A GSM Modem with serial and TTL outputs. 
+ 
+Fig.3.2.2 (a) SIM 900A
+3.2.3 LCD Display
+The term LCD stands for liquid crystal display. It is one kind of electronic display module used in an extensive range of applications like various circuits & devices like mobile phones, calculators, computers, TV sets, etc. These displays are mainly preferred for multi-segment light-emitting diodes and seven segments. The main benefits of using this module are inexpensive; simply programmable, animations, and there are no limitations for displaying custom characters, special and even animations, etc.
+ 
+Fig. 3.2.3 (a)16X2 LCD
+
+a)	Pin1 (Ground/Source Pin): This is a GND pin of display, used to connect the GND terminal of the microcontroller unit or power source.
+b)	Pin2 (VCC/Source Pin): This is the voltage supply pin of the display, used to connect the supply pin of the power source.
+c)	Pin3 (V0/VEE/Control Pin): This pin regulates the difference of the display, used to connect a changeable POT that can supply 0 to 5V.
+d)	Pin4 (Register Select/Control Pin): This pin toggles among command or data register, used to connect a microcontroller unit pin and obtains either 0 or 1(0 = data mode, and 1 = command mode).
+e)	Pin5 (Read/Write/Control Pin): This pin toggles the display among the read or writes operation, and it is connected to a microcontroller unit pin to get either 0 or 1 (0 = Write Operation, and 1 = Read Operation).
+f)	Pin 6 (Enable/Control Pin): This pin should be held high to execute Read/Write process, and it is connected to the microcontroller unit & constantly held high.
+g)	Pins 7-14 (Data Pins): These pins are used to send data to the display. These pins are connected in two-wire modes like 4-wire mode and 8-wire mode. In 4-wire mode, only four pins are connected to the microcontroller unit like 0 to 3, whereas in 8-wire mode, 8-pins are connected to microcontroller unit like 0 to 7.
+h)	Pin15 (+ve pin of the LED): This pin is connected to +5V
+i)	Pin 16 (-ve pin of the LED): This pin is connected to GND.
+ 
+Fig. 3.2.3 (b) LCD-16×2-pin-diagram
+Registers of LCD: A 16×2 LCD has two registers like data register and command register. The RS (register select) is mainly used to change from one register to another. When the register set is ‘0’, then it is known as command register. Similarly, when the register set is ‘1’, then it is known as data register.
+Command Register:
+The main function of the command register is to store the instructions of command which are given to the display. So that predefined tasks can be performed such as clearing the display, initializing, set the cursor place, and display control. Here commands processing can occur within the register.
+Data Register:
+The main function of the data register is to store the information which is to be exhibited on the LCD screen. Here, the ASCII value of the character is the information which is to be exhibited on the screen of LCD. Whenever we send the information to LCD, it transmits to the data register, and then the process will be starting there. When register set =1, then the data register will be selected.
+Features of LCD16x2
+•	The operating voltage of this LCD is 4.7V-5.3V
+•	It includes two rows where each row can produce 16-characters.
+•	The utilization of current is 1mA with no backlight
+•	Every character can be built with a 5×8 pixel box
+•	The alphanumeric LCDs alphabets & numbers
+•	Is display can work on two modes like 4-bit & 8-bit
+•	These are obtainable in Blue & Green Backlight
+•	It displays a few custom generated characters
+
+3.2.4 Relay
+ 
+Fig. 3.2.4 (a) Relay Module
+5 Volts 1-Channel relay module is an interface board that is compatible with Arduino, AVR, PIC, ARM, etc. This module can work in a high current like AC250V 10A or DC30V 10A. It controls larger loads and devices like DC motors, AC motors, and other AC and DC devices with the digital outputs from controllers and processors. It is a 1-channel relay module, so it can control any 1 device.  Each relay or channel of 1 channel relay module needs 15-20mA driver current and 5 Volts supply.
+Product Specifications
+•	Product Type: 1-Channel relay module
+•	Dimensions: 75 mm x 55 mm x 19.3 mm
+•	Relay colour: Blue
+•	PCB colour: Blue
+•	Maximum output of relay: AC250V 10A and Dc30V 10A
+•	Number of Relays: 1
+•	Control signal type: TTL level
+•	Input voltage: 5v
+•	Compatible with: Arduino, AVR, PIC, ARM, Raspberry Pi etc
+•	Package contains: 1 piece of 1 channel relay module
+
+3.2.5	Power Supply 
+The major blocks of power supply are given below Transformer, Rectifier, Filter, 7805 voltage regulator .These will provide the regulated power supply to the unit which is first converted into 12V AC. 12V AC is converted into DC using rectifier circuit .Finally the 7805 voltage regulator provides constant 5V DC supply which will be given to circuit.
+Specification:
+For 230V to 12 V unregulated Power supply 
+•	Input voltage : 230 V 50 Hz
+•	Output voltage: 12 V
+•	Output current : 2 A
+•	Maximum ripple : 5%
+•	Capacitor : 0.033 F
+For Transformer:
+•	Max Vo : 13.7 V
+•	Vprimary : 230 VAC
+•	Vsecondary : 10 VAC
+•	Frequency : 50 Hz
+•	Power : 27.4 VA
+For Diode Bridge :
+•	V_reverse : 60 V
+•	Idiode : 4 A
+•	Fuse : 0.2 A
+For 12 V to 5 V regulated section:
+•	Voltage regulator chip : LM 7805
+For Capacitive filter :
+•	I/P capacitor : 0.33x10^6 F
+•	O/P capacitor : 0.1x10^6 F
+For 12 V to 5 V unregulated section :
+•	Vomin : 8 V
+•	Capacitor : 1000x10^6 F
+•	Vdc FL : 10.5 V
+•	Vdc NL: 18.5 V
+•	PIV(peak inverse voltage) : 25 V
+•	Diode : 1A @ 25 V
+•	Transformer : 230/15 VAC @ 2A
+
+3.2.6 BRIDGE RECTIFIER
+Rectifier: A single silicon rectifier diode in forward conduction develops a voltage of around 0.7V (but can be up to 2V). In general we allow about 2V -3V drop for the bridge rectifier configuration. 
+The voltage at different points in the circuit, based on a 240:12V transformer. Here you can see the output from the transformer. The output is a sine wave centered around 0 volts. The peak voltage Vpk is 1.414 times the RMS output - the transformers quoted value.
+Thus Bridge rectifier output is
+Vdc= ( Vac X 1.414)-1.4.
+Here,
+Vac=12V
+Therefore Vdc= (12 * 1.414)-1.4
+=16.968-1.4
+=15.568≈15V
+
+Smoothing Capacitor: If we assume that your step down transformer reduces the amplitude of 60 Hz sine wave from 220 V to 15 V, and if we assume that your 5 V power supply will need to output at most I_max = 1 A current, then we can start making some calculations. Your smoothing capacitor, which you will place after the bridge rectifier, will have V_max = 15 V on it, which is the amplitude of your sine wave. In the image:
+
+ 
+Fig. 3.2.6  (a)Capacitor Output
+You see that capacitor discharges during almost the whole period of half-wave rectified wave (in our case this discharge is caused by the Imax = 1 A load current going into LM7805). The discharge time of reservoir capacitor in the case of half-wave rectifier is Tdischarge = T = (1/f) = (1/60 Hz) = 16.6 ms, however, notice that, in our case we have a more sophisticated rectifier (Diode bridge) which gives a full-wave rectified output. So, the discharge time will be Tdischarge = T/2 = (1/2*f) = 8.3 ms.
+Now, at the beginning of each discharge period our capacitor is charged up to Vmax = 15 V. In order to prevent our capacitor voltage going below Vmin = 7 V (which is the lowest input operating point for LM7805 voltage regulator) in the end of the discharge period, our capacitor value should be chosen with the equation:
+C >= (Imax*Tdischarge)/(Vbeforedischarge -Vafterdischarge)
+Using the values; Vbeforedischarge = Vmax = 15 V.
+ Vafterdischarge = Vmin = 7 V. 
+Imax = 1 A 
+Tdischarge = 8.3 ms, 
+We can calculate that:
+Cmin = (1 A)*(8.3 ms)/ (15 V - 7 V) = 1 mF=1000uF.
+
+
+Calculation of 3.3 V using LM317: The output voltage is selected using two resistors. Normally R1 is chosen to be around
+220Ω or 240Ω. The formula for calculating the value of R2 is
+Vout = Vref*(1+ (R2/R1))
+
+
+Or to put it another way 
+
+R2=R1 ((V/1.25)-1)
+
+Setting R2 to zero (ground the adjusting pin) will cause the output voltage to drop to 1.25V. R2 may be replaced by a pot to give an adjustable output voltage range.
+
+Here Vout=3.3V, Vref=1.25 and Assuming R1=330E
+Then R2=330((3.3/1.25)-1)
+	=330(1.64)
+	=541E.
+So the R2 is replaced with POT to adjust the output voltage.
+
+
+
+
+
+
+
+4.	Software Details
+4.1 Arduino IDE 
+Arduino IDE is an open-source electronic platform based on easy-to-use hardware and software. Arduino boards are able to read inputs like light on a sensor, a finger placed on a button, or a Twitter message; and turn it into an output to activating a motor, turn on an LED, publishing something online. One can tell the board what to do by sending a set of commands/instructions to the micro-controller on the board. To do this, the Arduino programming language (based on wiring) and the Arduino software processing based are used. 
+Overview: Over the years, Arduino has been the brain of thousands of projects, from everyday objects to complex scientific instruments. A worldwide community of makers, students, artists, programmers and professionals have gathered around this opensource platform to make their contributions which added up to make an incredible amount of knowledge that is of great help to novices and experts alike [23]-[24]. Arduino was born at Ivrea Interaction Design Institution as an easy tool for fast prototyping aimed at students without background in electronics and programming. As soon as it reached a wider community, the Arduino boards started changing to adapt to new needs and challenges; differentiating its offers from simple 8-bit boards to produce for IoT applications, 3D printings and embedded design environments. All Arduino boards are completely open-source, empowering users to build them independently and eventually adapt to their particular needs. The software is also open-source and it is growing by the day through the contributions of users worldwide. 
+
+4.2 Why Arduino IDE 
+Thanks to its simplicity and accessibility nature, Arduino has been used in thousands of different projects and applications. The Arduino software is easy to use for beginners, yet flexible enough for advance users. It runs on Mac, Windows and Linux based operating systems. Many people use it to build low cost scientific instruments to prove physics and chemistry principles or to get started with programming, robotics and embedded system designs. Designers and architects build interactive prototypes, musicians and artists use it for installation and to experiment with new musical instruments. Makers on the other hand, use it to build many new things.
+ Anyone can start tinkering just following the step by step instructions of a kit, sharing ideas online with other members of the Arduino community. There are many other micro-controllers and micro-controller platforms available for physical computing. Parallax Basic Stamp, Netmedia‟s BX-24, Phidgets, MIT‟s Handy board and many others offer similar functions. All of these tools take messy details of micro-controller programming and wrap it up in an easy-to-use package. Arduino also simplies the process of working with micro-controllers and offers some advantage for interested users to develop their programming skills. 
+4.3	Working with Arduino 
+The Arduino Integrated Development (IDE) contains a text editor for writing codes, a message area, a text console, a toolbar with buttons for common functions and a series of menus. It can be interfaced with hardware to upload programs. 
+Writing Sketches
+1)	 Programs written using Arduino software are called sketches. These sketches are written in the text editor and are saved with the file extension .ino. The editor has features for cutting/pasting and for searching/replacing text. The message area gives feedback while saving and exporting and as well shows the errors if any. The console displays text output by the Arduino software including complete error messages and other information or suggestions on how to correct the errors. The bottom right hand corner of the window displays the configured boards and serial port. The toolbar buttons allows you to verify and upload programs, create, open and save sketches. It also allows you to open the serial monitor or serial plotter for value and graphical displays respectively. 
+2)	Open: Presents a menu of all the sketches in your sketchbook. Clicking open will open it within the current window overwriting its contents. 
+3)	New: Creates a new sketch file. 
+4)	Save: Saves your current sketch file. 
+5)	Verify: Checks for errors in the sketch while compiling. 
+6)	Upload: Compiles the present code and uploads it to the configured board. 
+7)	Serial Monitor and Plotter: Opens the serial monitor or plotter depending which is clicked for analyzing of data. Additional commands are found within the five menus: File, Edit, Sketch and Help. The menus are context sensitive, which means only those items relevant to the work currently being carried out will be available.
+File:
+1)	New: Creates a new instance of the editor which the bare minimum structure of a sketch already in place. 
+2)	Open: Allows loading a sketch file through the computer drives and folders. 
+3)	Open recent: Provides a shortlist of the most recent sketches, ready to be opened. 
+4)	Sketchbook: Shows the current sketches within the sketchbook structure; clicking on any name opens the corresponding sketch in new editor instances. 
+5)	Examples: Any example provided by the Arduino software or library shows up in this menu item. All the examples are structured in a tree that allows easy access by topic or library. 
+6)	Close: Closes the instances of Arduino software from which it is clicked. 
+7)	Save: Saves the sketch with the current name. If the file hasn’t been named, a name will be provided in a “Save as ...” window. 
+8)	Save as: Allows saving the current sketch with a different name. 
+9)	Page setup: It shows the Page Setup window for printing. 
+10)	Print: Sends the current sketch to the printer according to the setting defined in the Page Setup. 
+11)	Preferences: Opens the Preferences window where some settings of the IDE may be customized as the language of the IDE interface. 
+12)	Quit: Closes all IDE windows. The same sketch will reopened automatically after quitting and starting the IDE. 
+Edit :
+1)	Undo/Redo : Goes back off one or more steps you did while editing; when you go back, you may go forward with Redo 
+2)	Cut: Removes the selected text from the editor and places it into the clipboard. 
+• Copy: Duplicates the selected text in the editor and places it into the clipboard. 
+3)	Copyforum: Copies the code of your sketch to the clipboard in a form suitable for posting to the forum complete with syntax colouring. 
+4)	CopyHTML: Copies the code of your sketch to the clipboard as HTML suitable for embedding in WEB pages. 
+5)	Paste: Puts the content of the clipboard at the cursor position in the editor. • Select All: Selects and highlights the whole content of the editor. 
+6)	Comment/uncomment: Puts or removes the // comment marker at the beginning of each selected lines. 
+7)	Increment/Decrement: Adds or subtracts a space at the beginning of each selected line, moving the text one space on the right or eliminating a space at the beginning. 
+8)	Find: Opens the Find and Replace window where you can specify text to search inside the current sketch according to the many options available. 
+9)	Find next: Highlights the next occurrences – if any of the strings specified as the search item in the Find window, relevant to the cursor position. 
+10)	Find previous: Highlights the previous occurrences – if any, of the strings specified as the search item in the Find window, relevant to the cursor position. 
+Sketch :
+1)	Verify/Compile checks your sketch for errors while compiling it and it will report memory usage for code and variables in the console area. 
+2)	Upload: Compiles and loads the binary file onto the configured board through the configured port. 
+3)	Upload using programming: This will overwrite the boot loader on the board; you will need to use to restore it and be able to upload to USB serial port again. However, it allows you to use the full capacity of the Flash memory for your sketch. Note that this command will not burn the fuses. To do so, a command must be executed. 
+4)	Export compiled binary: Saves a .hex file that may be kept as archive or sent to the board using other tools. 
+5)	Show sketch folder: Opens the current sketch folder. 
+6)	Include library: Ads a library to the sketch by inserting #include statement at the start of your code. Furthermore, from this menu item, you can access the Library Manager and import new libraries from .zip files. 
+7)	Add file: Adds a source file to the sketch (it will be copied from its current location). The new file appears in a new tab in the sketch window. Files can be removed from the sketch using the tab menu accessible clicking on the small icon below the serial monitor on the right hand side of the toolbar. 
+Tools Auto Format: 
+This formats your code nicely: i.e. indents it so that opening and closing curly braces line up; and that the statements inside the curly braces are indented more. 
+1)	Archive sketch: Archives a copy of the current sketch in .zip format. The archive is placed in the same directory as the sketch 
+2)	Fix encoding: Fixes possible discrepancies between the editor char map encoding and other operating systems char maps. 
+3)	Serial monitoring: Opens the serial monitor window and initiates the exchange of data with any connected board on the currently selected port. This usually resets the board, if the board supports Reset over serial port opening. 
+4)	Serial Plotter: Opens the serial plotter window and initiates the exchange of data with any connected board on the currently selected port and displays the results graphically. 
+5)	Board: Enables user to select the board connected to be used. 
+6)	Port: This menu contains all serial devices (real or virtual) on your machine. It should automatically refresh every time you open the top – level tool menu. 
+7)	Programmer: For selecting a hardware programmer when programming a board or chip and not using the onboard USB – serial connection. Normally, you would not need this, but if you are burning a bootloader to a new microcontroller, you will need to use it. 
+8)	Burn bootloader: The items in this menu allow you to burn a boot loader onto the microcontroller on an Arduino board. This is not required for normal use of an Arduino or Genuino board but is useful if it is a new ATmega microcontroller (which normally comes without a boot loader). Ensure that you have selected the correct board from the menu before burning the boot loader on the target board. This command also sets the right fuses. 
+
+
+
+Help: 
+Here, you will find an easy access to a number of documents that come with the Arduino Software. You have access to Getting Started, Reference, etc. This guides to the IDE and other documents locally without an Internet connection. The documents are a local copy of the online and may link back to their online website. 
+ Find in reference: This is the only interactive function of the Help menu: it directly selects the relevant page in the local copy of the Reference for the function or command under the cursor.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5. SYSTEM IMPLIMENTATION
+
+
+5.1 Circuit Diagram
+
+
+ 
+Fig. 5.1 (a)Circuit Diagram
+
+
+
+
+
+
+
+
+
+5.2 Flow Chart
+
+ 
+
+Fig. 5.2 (a) Flow chart of controlling through GSM-module
+ 
+Fig. 5.2 (b)Flow chart of sending status of Relay to GSM
+5.3 PCB Design     
+Printed circuit boards may be covered in two topics namely. PCB means printed circuit board PCB is one of the most important elements in any electronic system. They accomplish the interconnection the between component mounte. PCB consist of conductive circuit pattern which is applied to one or both sided of an insulating base copper is most widely used for conductor material. Aluminum nickel, silver, brass is used for same special application. The thickness of conducting material depends upon the current carrying capacity of circuit. Thus a thicker conductor layer will have mare current carrying capacity once the PCB is manufactured the current carrying capacity is depends on which of conductor track. 
+
+
+
+Types of PCB:
+•	Single sided PCB. 
+•	Double sided PCB. 
+ Single Sided PCB : This type of PCB consists of a natural coil of a copper on only one side of the base material. This  type of PCB frequently used when the manufacturing cost has to be kept at minimum. 
+Double Sided PCB : Double sided PCB is used when there is more number of jumpers. This type of PCB has copper fail on both side of base material. The double-sided PCB’s are used 2when insulation of PCB is very complicated i.e. if jumpers are more in number and when it is difficult to fabricants the PCB ON a single sided PCB. 
+PCB Design Steps: 
+ Preparations are 
+•	Layout planning 
+•	Artwork drawing 
+•	Artwork transforming 
+•	Painting 
+•	Etching 
+•	Drilling 
+•	Soldering 
+ 
+5.4 Manufacturing processes of PCB: 
+The conductor pattern which is on the master film is transferred on copper clad laminate by two methods.  
+•	Photo resist printing  
+•	Screen printing.  
+
+
+
+Photo resist printing Photopolymer resist is a light sensitive organic material like KPR (Kodak Photo resist) which is applied to the board as a thin film, the photo resist when exposed to ultraviolet light hardens or polymerizes. Once it is polymerized, it becomes insoluble to certain chemical   solvents known as developers. The developer dissolves the portion which is masked or which is not exposed to light. Thus the pattern that is to be drawn on PCB is derived from the artwork which is photographic process. This is transferred to a master film on 1:1 scale. This can be reduced to any small size thus miniaturization is possible. The pattern is transferred to a mask. This mask is kept on PCB. The whole process is known as Image transfer. The unpolymerized or masked portion is washed away in developer leaving wanted copper pattern on board KPR or photo resist is then removed. This technique is similar to the one used in printing industry. The copper foil is covered with printing ink where the conducting paths are going to be. The screen which is used for pattern is of either stainless steel or polyester mesh which is dimensionally accurate and fine mesh. The open meshes of screen correspond to the pattern. PCB is placed under the screen. Printing ink is placed at one end of the screen, and by means of a rubber squeegee it is pushed through open meshes; Printed circuit board is then removed for drying. After drying board is washed in ferric chloride which acts as etchant. Etching is chemical process by which unwanted copper is removed. The portion which is covered by ink is not removed, that is the pattern remains intact. Later ink stripping is done with trichloroethylene. 
+Protection of copper tracks Copper when exposed to atmosphere for a long time gets tarnished and problems are created while soldering. The tracks can be protected by applying lacquer or varnish properties, the thickness of these coatings. Copper is also protected by plating. There are three methods of plating 1. Immersion plating 2. Electro less plating 3. Electroplating  
+(1) Immersion plating utilizes tin and its alloys and gold. It is done by chemical replacement from coating material salt solution. This method is simple and less costly.  
+(2) In electro less copper plating electric current is not used instead a chemical reducing agent  is used which supplies electrons for reaction in which copper is reduced from its ionic state 
+(3)In electroplating a.c d.c current is passed between two electrodes, and a thin coating is deposited on 2 2cathode when immersed in electrolyte. 
+
+
+
+The printed circuit board usually serves there distinct functions are as follows: 
+•	It provides mechanical support for the component mounted on it. 
+•	It provides necessary electrical interconnections. 
+•	It acts as a heat sink i.e. it provides a conduction path leading to removal of most of the heat generate in the circuit. 
+
+Advantage of PCB:
+ Over the conventional wire method:  
+•	PCB’s have controllable and predicable electrical mechanical properties. 
+•	Rapid production is possible. 
+•	Time is saved since it avoids wiring connections production to another Weight is reduced. 
+•	Soldering is done in one operation instead of individual connection between component and wires. 
+•	Cost is less. 
+
+5.5 Packaging and Printed Circuit Design 
+This is the stage where the device under design gets a suitable enclosure designed or selected. This enclosure selection as well as connectors, controls, and displays must all be resolved before the printed circuit layout commences. The first step in designing a printed circuits the mechanical pattern or outline of the board assembly itself. 
+The major steps in this process are: A package (housing) is selected or designed. If designed, the mechanical drawing must be produced of the assembly. If selected, this drawing will be supplied by the manufacturer. Nomenclature and graphics for the enclosure will be designed. This may be applied in the form of labels, overlays, silkscreens, or a combination. The printed circuit layout commences and resolves the requirements of the circuit diagram usage of electronic components with the form factor demanded by the packaging design process. 
+The printed circuit artwork is processed on film and used by a manufacturer to etch printed circuit boards for the board assembler. A silkscreen of part locations to assist in the assembly process is normally applied on the printed circuit card by the manufacturer. 
+The PCB designing involved steps into converting the circuit designing into a board by making connections compact. It also involved taking into consideration the rules of PCB designing and optimization of space and resources. 
+Prototyping or Trial Production: Sometimes prototypes are built before stage 4 (packaging and printed circuit layout) but the speed and cost advantages of computer aided design are making this more uncommon. A hand-wired prototype of all or a portion of the circuit may be required for the design process. The prototyping process involved development of a trial product for testing purposes. It was done to save cost and minimize error probability after actual production. 
+Design Review: The stage where the prototype and initial units are evaluated for function, appearance, build-cost, and possible enhancements. This process should result in minor changes but is a must to insure compliance with the original goals. The design review appeared to be positive as all the units worked as expected. Some problems were faced as the slaves were resetting after every two seconds causing hindrance in the operation. It was caused because of excessive heat in the power supply capacitors. An additional heat sink was attached to the regulator IC to avoid the problem. 
+Manufacturing Setup including Test Setup:  The stage is where the necessary test procedures and apparatus, fixtures if necessary, and detailed assembly instruction and documents are put in place in order to yield quality, tested products when quantity production takes place. In this case, mass production was not an objective hence testing methods were used to test the system for durability and safety. 
+Testing methods: PCB Cold test: The first step was to carry out the visual inspection of the PCB. This means to check any short or cut in the tracks in aspects the tracks on PCB find any missing pads if anywhere found on it we did mechanical repair of the same 
+ The second step involved the continuity testing. This means to check that the current is flowing through all the tracks thirdly testing soldier of socket crystal & rest circuitry. 
+ Testing for LCD: First of adjust the contrast voltage (VC) of the LCD such that the visibility of the displayed information is proper other to make a clear visibility the pot was further adjusted at
+a last measure. Then initialize the LCD then write a small program. To display character on LCD. When the character was not displayed we checked again for LCD connections and repeated the procedure after reinitializing it.
+
+
+Documentation: The phase where circuit diagrams, parts lists, master printed circuit artwork, parts sources, software source code and documentation, mechanical drawings, assembly drawings, and all other items included as part of a project's deliverables are provided. 
+This package should be sufficient so as to make the product producible by any qualified source, not just the parties involved in the design. In the context this system the project report, a reference CD, compilation of data sheets and arranging them in proper order consisted of the documentation work. 
+Follow-up: The sponsors of the project released the system for relevance testing in the  network and got a positive response. There were some suggestions during the follow up of the system performance which are included in the project future scope. The follow up came out to be a successful exercise as it gave out many suggestions and improvement space for the system. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6.  RESULT
+6.1 Results
+
+ 
+
+Fig. 6.1 (a) HWR output 1
+
+ 
+Fig. 6.1 (b) HWR output 2
+
+
+ 
+
+Fig. 6.1 (c) Final Simulation
+
+6.2 Advantages
+1)	Easy to operate monitoring and controlling.
+2)	Time saving.
+3)	Control From anywhere in the world.
+4)	Saves money.
+
+
+
+
+
+
+
+
+7. CONCLUSIONS
+7.1	Conclusion
+The GSM unit integrated with the microcontroller to give a single compact unit makes the project an adorable one and the idea of controlling one “home appliances just by sending an SMS was an attractive innovation to users who reviewed the developed system. The cost of sending the SMS is relatively cheap depending on the charges of the preferred mobile network. Further research work can be tailored towards developing similar system that can remotely control complex electronic systems with high voltage requirements.
+Lab automation aims to provide lower overall costs, higher throughput, more efficient testing, a safer environment, reduced experimental error, and improved accuracy and reliability of the data. However, automation remains a costly process and should be tailored separately to each lab, depending on their experimental needs and workloads.  
+
+7.2 Future Scope
+Further research work can be tailored towards developing similar system that can remotely control complex electronic systems with high voltage equirements .Also, research efforts can also be geared towards developing similar systems that can the controlled remotely using voice prompts through calls instead of SMS.
+
+
+
+
+
+
+
+
+
+
+
+
+8. REFERENCES
+1.ArmandoRoyDelgado,RichPickingandVicGrout(2012),„Remote-Controlled Home Automation Systems with Different Network Technologies‟, Centre for Applied Internet Research(CAIR), University f Wales, NEWI, Wareham, UK.
+ 2. Basil Hamed (2012): „ Design &Implementation of Smart House Control Using Lab VIEW‟, International Journal of Soft Computing and Engineering (IJSCE) ISSN: 2231-2307, Volume-1, Issue-6, Pg. 99-106.
+ 3.C.K.Das, M.Sanaullah, H.M.G.Sarower and M.M.Hassan„ Development of a Cell Phone based Remote Control System: an Effective Switching System for Controlling Home and Office Appliances‟, International Journal of Electrical& Computer Sciences IJECS- IJENS Vol:09 No:10, Pg. 23-29.
+ 4. Ganiyu R. A., Arulogun O. T., Adetunji A. B.and Okediran O. O (2011), Development of GSM Based Household Power Management System‟, British Journal of Science, Vol. 1, No (2), Pg. 2047-3745.
+ 5. Gordon and Earl (2005), Electronic for Dummies, Wiley Publishing Inc., Indianapolis, Indiana. Pg. 68-72. 
+6. S.M. Anamul Haque, S.M. Kamruzzamanand Md.Ashrafu lIslam (2018), “A System for Smart-Home Control of Appliances Based on Timer and Speech Interaction”, Proceedings of the 4th International Conference on Electrical Engineering & 2nd Annual Paper Meet, India, Pg. 26-28.
+7. Inderpreet Kaur (2010),„ Microcontroller Based Home Automation System With Security‟, International Journal of Advanced Computer ScienceandApplications,Vol.1,No.6,Pg.60-65.
+ 8. NhivekarG.S. And MudholkarR.R (2011), “Microcontroller Based IR Remote Control Signal Decoder for Home Application”, Advances in Applied Science Research, Vol.2, No 4, Pg. 410-416. 
+9. Kailash Patil, Harpreet Singh Dhillon and Abhijit Mitra (2011): “A Telephone Based Wireless Remote Controller for Home Appliances”, Department of ECE, Indian Institute of Technology, Guwahati781 039, India.
+
+Appendix
